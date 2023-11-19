@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 60px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px/28px;
+    color: black;
+    background-color:rgb(220, 244, 220);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#judul {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(76, 158, 76);
+    border: 1px;
+    margin-top: 10rem;
+    margin-bottom: 15px;
+}
+#slogo img {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+#slogo p{
+    text-align: justify;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif
+}
+#tittle {
+    text-align: center;
+    padding: 10px;
+    border: 3px;
+    margin-top: 10rem;
+    margin-bottom: 20px;
+    border-bottom: 5px solid ghostwhite;
+}
+.gallery {
+    margin: 7px;
+    border: 4px;
+    float:left;
+    width: 185px; 
+    ;
+}
+.gallery:hover {
+    border: 1px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    
+}
+.desc {
+    padding: 15px;
+    text-align: left;
+}
+.about {
+        border:1px solid black;
+}
+#footer {
+    display: center;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    background-color:beige;    
+}
+#footer li {
+    display: inline-block;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+/* responsive */
+  @media screen and (max-width: 1340px) {
+    html {
+        font-size: 75%;
+    }
+    #menu {
+        display:block;
+    }
+    .navbar{
+        padding: 1.8rem 4%;
+    }
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color:rgb(212, 186, 186);
+        width: 30rem;
+        height: 100vh;
+    }
+    .navbar .navbar-nav.active{
+        right: 0;
+        transition: 1s;
+    }
+    .navbar .navbar-nav a{
+        font-size: large;
+        color:beige;
+        display:block;
+        margin: 1.4rem;
+    }
+    .navbar .navbar-nav a:hover{
+        color:dimgray;
+        font-size: 1.6rem;
+    }
+    .navbar .navbar-nav a::after{
+        content: '';
+        display:inline-block;
+        padding-bottom: 0.2rem;
+        border-bottom: 0.1rem solid cadetblue;
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 350px) {
+    html{
+        font-size: 55%;
+    }
+  }
+  
+/* tablet */
+  @media screen and (max-width: 750px) {
+    html{
+        font-size: 60%;
+}
+}
